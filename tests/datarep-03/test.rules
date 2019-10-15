@@ -1,0 +1,1 @@
+alert dns any any -> any any (dns.query; to_sha256; datarep:dns_ioc, >, 200, type sha256, state dns_ioc.rep, sid:1;)
